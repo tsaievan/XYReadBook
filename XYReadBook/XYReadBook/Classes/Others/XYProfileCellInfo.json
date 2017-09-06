@@ -1,0 +1,50 @@
+ [
+  [
+   {
+   "img" : "wallet",
+   "title" : "钱包",
+   "next" : "XYWalletController",
+   "accessViewName" : "UIImageView"
+   }
+   ],
+  [
+   {
+   "img" : "topUps",
+   "title" : "充值明细",
+   "next" : "XYChargeController",
+   "accessViewName" : "UIImageView"
+   },
+   {
+   "img" : "consumption",
+   "title" : "消费明细",
+   "next" : "XYConsumeController",
+   "accessViewName" : "UIImageView"
+   }
+   ],
+  [
+   {
+   "img" : "record",
+   "title" : "浏览记录",
+   "next" : "XYBrowseController",
+   "accessViewName" : "UIImageView"
+   },
+   {
+   "img" : "opinion",
+   "title" : "意见反馈",
+   "next" : "XYOpinionController",
+   "accessViewName" : "UIImageView"
+   },
+   {
+   "img" : "setup",
+   "title" : "设置",
+   "next" : "XYSettingController",
+   "accessViewName" : "UIImageView"
+   },
+   {
+   "img" : "aboutUs",
+   "title" : "关于我们",
+   "next" : "XYAboutUsController",
+   "accessViewName" : "UIImageView"
+   }
+   ]
+  ]

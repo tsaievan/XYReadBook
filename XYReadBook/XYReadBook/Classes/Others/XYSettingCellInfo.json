@@ -1,0 +1,38 @@
+[
+ [
+  {
+  "img" : "",
+  "title" : "性别",
+  "next" : "",
+  "accessViewName" : "UIImageView"
+  }
+  ],
+ [
+  {
+  "img" : "",
+  "title" : "阅读界面保持屏幕开启",
+  "next" : "",
+  "accessViewName" : "UISwitch"
+  },
+  {
+  "img" : "",
+  "title" : "翻页动画",
+  "next" : "",
+  "accessViewName" : "UISwitch"
+  }
+  ],
+ [
+  {
+  "img" : "",
+  "title" : "推荐图书",
+  "next" : "",
+  "accessViewName" : "UISwitch"
+  },
+  {
+  "img" : "",
+  "title" : "自动购买",
+  "next" : "",
+  "accessViewName" : "UISwitch"
+  }
+  ]
+ ]

@@ -1,0 +1,17 @@
+[
+  {
+    "clsName" : "XYBookshelfController",
+    "title" : "书架",
+    "imgName" : "Bookshelf"
+  },
+  {
+    "clsName" : "XYResourceController",
+    "title" : "资源",
+    "imgName" : "Resources"
+  },
+  {
+    "clsName" : "XYProfileController",
+    "title" : "我的",
+    "imgName" : "Me"
+  }
+]

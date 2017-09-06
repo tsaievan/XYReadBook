@@ -1,0 +1,14 @@
+platform :ios, ‘8.0’
+
+target 'XYReadBook' do
+
+use_frameworks!
+
+pod 'SnapKit', '~> 3.1.2'
+pod 'YYModel', '~> 1.0.4'
+pod 'YYWebImage', '~> 1.0.5'
+pod 'ObjectMapper', '~> 2.2'
+pod 'Alamofire', '~> 4.4'
+pod 'SwiftyJSON'
+
+end
