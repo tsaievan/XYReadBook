@@ -20,5 +20,17 @@ class XYWalletController: XYViewController {
         contentView.showsHorizontalScrollIndicator = false
         contentView.addSubview(walletView)
         view.addSubview(contentView)
+        
+        walletView.delegate = self
+    }
+}
+
+extension XYWalletController: XYWalletViewDelegate {
+    func walletView(walletView: XYWalletView, wechatButtonSelected sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    
+    func walletView(walletView: XYWalletView, alipayButtonSelected sender: UIButton) {
+        sender.isSelected = !sender.isSelected
     }
 }

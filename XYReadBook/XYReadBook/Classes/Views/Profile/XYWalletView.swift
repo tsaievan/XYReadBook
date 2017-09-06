@@ -171,12 +171,12 @@ extension PayView {
         alipayLabel.font = UIFont.systemFont(ofSize: 17)
         addSubview(alipayLabel)
         
-        wechatButton.setBackgroundImage((#imageLiteral(resourceName: "payPick")), for: .normal)
-        wechatButton.setBackgroundImage((#imageLiteral(resourceName: "payPick_selected")), for: .selected)
+        wechatButton.setBackgroundImage(#imageLiteral(resourceName: "payPick"), for: .normal)
+        wechatButton.setBackgroundImage(#imageLiteral(resourceName: "payPick_selected"), for: .selected)
         addSubview(wechatButton)
         
-        alipayButton.setBackgroundImage((#imageLiteral(resourceName: "payPick")), for: .normal)
-        alipayButton.setBackgroundImage((#imageLiteral(resourceName: "payPick_selected")), for: .selected)
+        alipayButton.setBackgroundImage(#imageLiteral(resourceName: "payPick"), for: .normal)
+        alipayButton.setBackgroundImage(#imageLiteral(resourceName: "payPick_selected"), for: .selected)
         addSubview(alipayButton)
     }
 }
@@ -316,6 +316,8 @@ class XYWalletView: UIView {
     lazy var middleView = MiddleView(frame: CGRect())
     lazy var bottomView = BottomView(frame: CGRect())
     
+    weak var delegate: XYWalletViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -325,6 +327,11 @@ class XYWalletView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+protocol XYWalletViewDelegate: NSObjectProtocol {
+    func walletView(walletView: XYWalletView, wechatButtonSelected sender: UIButton)
+    func walletView(walletView: XYWalletView, alipayButtonSelected sender: UIButton)
 }
 
 extension XYWalletView {
@@ -337,6 +344,19 @@ extension XYWalletView {
         
         bottomView.backgroundColor = UIColor.hm_color(withHex: 0xF1F1F1)
         addSubview(bottomView)
+        
+        bottomView.payView.wechatButton.addTarget(self, action: #selector(wechat(btn:)), for: .touchUpInside)
+        bottomView.payView.alipayButton.addTarget(self, action: #selector(alipay(btn:)), for: .touchUpInside)
+    }
+}
+
+extension XYWalletView {
+    func wechat(btn: UIButton) {
+        delegate?.walletView(walletView: self, wechatButtonSelected: btn)
+    }
+    
+    func alipay(btn: UIButton) {
+        delegate?.walletView(walletView: self, alipayButtonSelected: btn)
     }
 }
 
