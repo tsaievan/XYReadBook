@@ -1,0 +1,34 @@
+[
+ [
+  {
+  "img" : "resource_classification",
+  "title" : "分类",
+  "next" : "",
+  "accessViewName" : "UIImageView"
+  }
+  ],
+ [
+  {
+  "img" : "resource_list",
+  "title" : "排行榜",
+  "next" : "",
+  "accessViewName" : "UIImageView"
+  }
+  ],
+ [
+  {
+  "img" : "resource_project",
+  "title" : "专题",
+  "next" : "",
+  "accessViewName" : "UIImageView"
+  }
+  ],
+  [
+  {
+  "img" : "resource_signin",
+  "title" : "签到",
+  "next" : "",
+  "accessViewName" : "UIImageView"
+  }
+  ]
+ ]

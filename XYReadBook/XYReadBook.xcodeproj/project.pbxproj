@@ -12,7 +12,8 @@
 		570039261F58F35900E68B5D /* Bundle+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570039251F58F35900E68B5D /* Bundle+extensions.swift */; };
 		570039281F58F4AA00E68B5D /* XYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570039271F58F4AA00E68B5D /* XYViewController.swift */; };
 		5700392A1F58FE9100E68B5D /* XYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570039291F58FE9100E68B5D /* XYTabBar.swift */; };
-		5700392C1F59161400E68B5D /* XYControIlersInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 5700392B1F59161400E68B5D /* XYControIlersInfo.json */; };
+		575F93E11F60466E00E60439 /* XYControIlersInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 575F93E01F60466E00E60439 /* XYControIlersInfo.json */; };
+		575F93E31F60475900E60439 /* XYResourceCellInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 575F93E21F60475900E60439 /* XYResourceCellInfo.json */; };
 		578E53901F5D82F900B2DA2D /* XYSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E538F1F5D82F900B2DA2D /* XYSettingCell.swift */; };
 		579D0D7C1F593EEA004201D2 /* XYProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D0D7B1F593EEA004201D2 /* XYProfileHeader.swift */; };
 		57A416E61F5BB0D400EF4C1D /* XYAboutUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A416E51F5BB0D400EF4C1D /* XYAboutUsController.swift */; };
@@ -65,7 +66,8 @@
 		570039251F58F35900E68B5D /* Bundle+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+extensions.swift"; sourceTree = "<group>"; };
 		570039271F58F4AA00E68B5D /* XYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYViewController.swift; sourceTree = "<group>"; };
 		570039291F58FE9100E68B5D /* XYTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYTabBar.swift; sourceTree = "<group>"; };
-		5700392B1F59161400E68B5D /* XYControIlersInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = XYControIlersInfo.json; path = ../Bases/XYControIlersInfo.json; sourceTree = "<group>"; };
+		575F93E01F60466E00E60439 /* XYControIlersInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XYControIlersInfo.json; sourceTree = "<group>"; };
+		575F93E21F60475900E60439 /* XYResourceCellInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XYResourceCellInfo.json; sourceTree = "<group>"; };
 		578E538F1F5D82F900B2DA2D /* XYSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYSettingCell.swift; sourceTree = "<group>"; };
 		579D0D7B1F593EEA004201D2 /* XYProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYProfileHeader.swift; sourceTree = "<group>"; };
 		57A416E51F5BB0D400EF4C1D /* XYAboutUsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYAboutUsController.swift; sourceTree = "<group>"; };
@@ -178,7 +180,8 @@
 				57ADA79B1F5864C100E90CAC /* Info.plist */,
 				57ADA78F1F5864C100E90CAC /* XYAppDelegate.swift */,
 				57ADA7CD1F5868A700E90CAC /* XYObjcBridge.h */,
-				5700392B1F59161400E68B5D /* XYControIlersInfo.json */,
+				575F93E01F60466E00E60439 /* XYControIlersInfo.json */,
+				575F93E21F60475900E60439 /* XYResourceCellInfo.json */,
 				57B22FD11F5A951900A6CCB3 /* XYProfileCellInfo.json */,
 				57A416FE1F5D32C200EF4C1D /* XYSettingCellInfo.json */,
 			);
@@ -424,8 +427,9 @@
 			files = (
 				57A416FF1F5D32C200EF4C1D /* XYSettingCellInfo.json in Resources */,
 				57B22FD21F5A951900A6CCB3 /* XYProfileCellInfo.json in Resources */,
-				5700392C1F59161400E68B5D /* XYControIlersInfo.json in Resources */,
+				575F93E11F60466E00E60439 /* XYControIlersInfo.json in Resources */,
 				57ADA79A1F5864C100E90CAC /* LaunchScreen.storyboard in Resources */,
+				575F93E31F60475900E60439 /* XYResourceCellInfo.json in Resources */,
 				57ADA7971F5864C100E90CAC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

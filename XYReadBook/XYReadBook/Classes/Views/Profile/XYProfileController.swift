@@ -10,7 +10,7 @@ import UIKit
 import YYModel
 
 
-let cellId = "cellId"
+fileprivate let kProfileCellId = "kProfileCellId"
 
 class XYProfileController: XYViewController {
     
@@ -43,7 +43,7 @@ extension XYProfileController {
         let header = XYProfileHeader(frame: CGRect(x: 0, y: 0, width: gScreenWidth, height: 180))
         header.backgroundColor = UIColor.hm_color(withHex: 0xF1F1F1)
         tableView.tableHeaderView = header
-        tableView.register(XYProfileCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(XYProfileCell.self, forCellReuseIdentifier: kProfileCellId)
     }
 }
 
@@ -62,7 +62,7 @@ extension XYProfileController: UITableViewDataSource, UITableViewDelegate{
     
     ///< 返回cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:cellId , for: indexPath) as? XYProfileCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:kProfileCellId , for: indexPath) as? XYProfileCell
         let model = cellInfo[indexPath.section][indexPath.row]
         if let cell = cell {
             cell.model = model

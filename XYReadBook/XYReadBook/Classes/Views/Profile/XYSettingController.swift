@@ -8,6 +8,8 @@
 
 import UIKit
 
+fileprivate let kSettingCellId = "kSettingCellId"
+
 class XYSettingController: XYViewController {
     lazy var tableView = UITableView()
     var cellInfo = [[XYElement]]()
@@ -32,7 +34,7 @@ class XYSettingController: XYViewController {
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
-        tableView.register(XYSettingCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(XYSettingCell.self, forCellReuseIdentifier: kSettingCellId)
 
     }
 }
@@ -52,7 +54,7 @@ extension XYSettingController: UITableViewDataSource, UITableViewDelegate{
     
     ///< 返回cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:cellId , for: indexPath) as? XYSettingCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:kSettingCellId , for: indexPath) as? XYSettingCell
         let model = cellInfo[indexPath.section][indexPath.row]
         if let cell = cell {
             cell.model = model
