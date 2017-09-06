@@ -10,7 +10,7 @@ import UIKit
 
 class XYAboutUsController: XYViewController {
 
-    lazy var commonView = XYProfileCommonView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), labelHidden: false)
+    lazy var commonView = XYProfileCommonView(frame: CGRect(), labelHidden: false)
     override func viewDidLoad() {
         super.viewDidLoad()
         commonView = XYProfileCommonView(frame: view.bounds, labelHidden: false)

@@ -10,7 +10,7 @@ import UIKit
 
 class XYOpinionController: XYViewController {
 
-    lazy var commonView = XYProfileCommonView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), labelHidden: true)
+    lazy var commonView = XYProfileCommonView(frame: CGRect(), labelHidden: true)
     override func viewDidLoad() {
         super.viewDidLoad()
         commonView = XYProfileCommonView(frame: view.bounds, labelHidden: true)

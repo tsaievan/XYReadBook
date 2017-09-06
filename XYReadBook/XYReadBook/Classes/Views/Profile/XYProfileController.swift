@@ -40,7 +40,7 @@ extension XYProfileController {
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
-        let header = XYProfileHeader(frame: CGRect(x: 0, y: 0, width: UIScreen.hm_screenWidth(), height: 180))
+        let header = XYProfileHeader(frame: CGRect(x: 0, y: 0, width: gScreenWidth, height: 180))
         header.backgroundColor = UIColor.hm_color(withHex: 0xF1F1F1)
         tableView.tableHeaderView = header
         tableView.register(XYProfileCell.self, forCellReuseIdentifier: cellId)

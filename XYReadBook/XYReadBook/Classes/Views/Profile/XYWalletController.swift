@@ -9,8 +9,8 @@
 import UIKit
 
 class XYWalletController: XYViewController {
-    lazy var contentView = UIScrollView(frame: CGRect(x: 0, y: 64, width: UIScreen.hm_screenWidth(), height: UIScreen.hm_screenHeight()))
-    lazy var walletView = XYWalletView(frame: CGRect(x: 0, y: 0, width: UIScreen.hm_screenWidth(), height: 650))
+    lazy var contentView = UIScrollView(frame: CGRect(x: 0, y: 64, width: gScreenWidth, height: gScreenHeight))
+    lazy var walletView = XYWalletView(frame: CGRect(x: 0, y: 0, width: gScreenWidth, height: 650))
     
     override func viewDidLoad() {
         super.viewDidLoad()

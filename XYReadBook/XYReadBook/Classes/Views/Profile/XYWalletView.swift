@@ -78,7 +78,7 @@ extension MiddleView {
         ///< 计算button的frame值
         let leftMargin: CGFloat = 24
         let topMargin: CGFloat = 16
-        let width = (UIScreen.hm_screenWidth() - (CGFloat)(3.0 * leftMargin)) * 0.5
+        let width = (gScreenWidth - (CGFloat)(3.0 * leftMargin)) * 0.5
         for i in 0 ..< 6 {
             let chargeButton = UIButton(type: .custom)
             chargeButton.setBackgroundImage((#imageLiteral(resourceName: "focusButton")), for: .normal)
@@ -200,7 +200,7 @@ extension PayView {
         middleLine.snp.makeConstraints { (make) in
             make.centerX.equalTo(self)
             make.centerY.equalTo(self)
-            make.width.equalTo(UIScreen.hm_screenWidth() - 16 * 2)
+            make.width.equalTo(gScreenWidth - 16 * 2)
             make.height.equalTo(1)
         }
         
@@ -239,7 +239,7 @@ extension PayView {
 
 class BottomView: UIView {
     lazy var payLabel = UILabel()
-    lazy var payView = PayView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    lazy var payView = PayView(frame: CGRect())
     lazy var priceLabel = UILabel()
     lazy var payNowButton = UIButton(type: .custom)
     
@@ -312,9 +312,9 @@ extension BottomView {
 }
 
 class XYWalletView: UIView {
-    lazy var topView = TopView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-    lazy var middleView = MiddleView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-    lazy var bottomView = BottomView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    lazy var topView = TopView(frame: CGRect())
+    lazy var middleView = MiddleView(frame: CGRect())
+    lazy var bottomView = BottomView(frame: CGRect())
     
     override init(frame: CGRect) {
         super.init(frame: frame)
