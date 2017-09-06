@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum XYPayViewButton: Int {
+    case wechatButton = 0
+    case alipayButton = 1
+}
+
 class TopView: UIView {
     lazy var coinImageView = UIImageView()
     lazy var totalLabel = UILabel()
@@ -173,10 +178,12 @@ extension PayView {
         
         wechatButton.setBackgroundImage(#imageLiteral(resourceName: "payPick"), for: .normal)
         wechatButton.setBackgroundImage(#imageLiteral(resourceName: "payPick_selected"), for: .selected)
+        wechatButton.tag = XYPayViewButton.wechatButton.rawValue
         addSubview(wechatButton)
         
         alipayButton.setBackgroundImage(#imageLiteral(resourceName: "payPick"), for: .normal)
         alipayButton.setBackgroundImage(#imageLiteral(resourceName: "payPick_selected"), for: .selected)
+        alipayButton.tag = XYPayViewButton.alipayButton.rawValue
         addSubview(alipayButton)
     }
 }
@@ -330,8 +337,7 @@ class XYWalletView: UIView {
 }
 
 protocol XYWalletViewDelegate: NSObjectProtocol {
-    func walletView(walletView: XYWalletView, wechatButtonSelected sender: UIButton)
-    func walletView(walletView: XYWalletView, alipayButtonSelected sender: UIButton)
+    func walletView(walletView: XYWalletView, payViewButtonSelected sender: UIButton)
 }
 
 extension XYWalletView {
@@ -345,18 +351,14 @@ extension XYWalletView {
         bottomView.backgroundColor = UIColor.hm_color(withHex: 0xF1F1F1)
         addSubview(bottomView)
         
-        bottomView.payView.wechatButton.addTarget(self, action: #selector(wechat(btn:)), for: .touchUpInside)
-        bottomView.payView.alipayButton.addTarget(self, action: #selector(alipay(btn:)), for: .touchUpInside)
+        bottomView.payView.wechatButton.addTarget(self, action: #selector(payViewButton), for: .touchUpInside)
+        bottomView.payView.alipayButton.addTarget(self, action: #selector(payViewButton), for: .touchUpInside)
     }
 }
 
 extension XYWalletView {
-    func wechat(btn: UIButton) {
-        delegate?.walletView(walletView: self, wechatButtonSelected: btn)
-    }
-    
-    func alipay(btn: UIButton) {
-        delegate?.walletView(walletView: self, alipayButtonSelected: btn)
+    @objc func payViewButton(btn: UIButton) {
+        delegate?.walletView(walletView: self, payViewButtonSelected: btn)
     }
 }
 
