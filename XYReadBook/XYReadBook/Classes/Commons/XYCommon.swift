@@ -2,33 +2,28 @@
 //  XYCommon.swift
 //  XYReadBook
 //
-//  Created by fox on 2017/9/4.
+//  Created by tsaievan on 2017/9/6.
 //  Copyright © 2017年 tsaievan. All rights reserved.
 //
 
 import UIKit
-/*
- 刀哥的那个获取屏幕宽高,有点太恶心了.还得方法调用
- */
 
-/// 屏幕宽度
-let ScreenWidth:CGFloat = UIScreen.main.bounds.size.width
+///< 获取屏幕宽度
+let gScreenWidth: CGFloat = UIScreen.main.bounds.width
 
-/// 屏幕高度
-let ScreenHeight:CGFloat = UIScreen.main.bounds.size.height
+///< 获取屏幕高度
+let gScreenHeight: CGFloat = UIScreen.main.bounds.height
 
-/// 屏幕分辨率
-let Scale:CGFloat = UIScreen.main.scale
+///< 获取屏幕分辨率
+let gScale: CGFloat = UIScreen.main.scale
 
 
-func XYLog<T>(messsage : T, file : String = #file, funcName : String = #function, lineNum : Int = #line) {
-   
+///< 自定义打印
+func XYLog<T>(message: T, file: String = #file, funcName: String = #function, lineNum: Int = #line) {
     #if DEBUG
-        
-        let fileName = (file as NSString).lastPathComponent
-        
-        print("\(fileName):(\(lineNum))-\(messsage)")
-        
+    let fileName = (file as NSString).lastPathComponent
+    print("\(fileName) : (\(lineNum)) - \(message)")
     #endif
 }
+
 

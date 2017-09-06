@@ -47,6 +47,7 @@
 		57ADA7D31F586E6C00E90CAC /* XYProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADA7D21F586E6C00E90CAC /* XYProfileController.swift */; };
 		57ADA7D51F586E8000E90CAC /* XYResourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADA7D41F586E8000E90CAC /* XYResourceController.swift */; };
 		57B22FD21F5A951900A6CCB3 /* XYProfileCellInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 57B22FD11F5A951900A6CCB3 /* XYProfileCellInfo.json */; };
+		57D8D3FE1F5F89A1000932ED /* XYCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8D3FD1F5F89A1000932ED /* XYCommon.swift */; };
 		5FEEC099F71AEB5B5EF3DADA /* Pods_XYReadBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0E61760BD462F116F565B /* Pods_XYReadBook.framework */; };
 		985625C91F5EAB7C0025C639 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985625C81F5EAB7C0025C639 /* UIImageView+Extension.swift */; };
 		985625CF1F5EC22C0025C639 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985625CE1F5EC22C0025C639 /* CacheManager.swift */; };
@@ -55,8 +56,7 @@
 		985625D61F5EC4AF0025C639 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985625D51F5EC4AF0025C639 /* BaseResponse.swift */; };
 		985625DA1F5EC4EE0025C639 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985625D91F5EC4EE0025C639 /* HTTPManager.swift */; };
 		985625DC1F5EC7730025C639 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985625DB1F5EC7730025C639 /* Reach.swift */; };
-		98A2515B1F5D83CB004434A2 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		98A2515D1F5D8E2A004434A2 /* XYCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A2515C1F5D8E2A004434A2 /* XYCommon.swift */; };
+		98A2515B1F5D83CB004434A2 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +115,7 @@
 		57ADA7D21F586E6C00E90CAC /* XYProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYProfileController.swift; sourceTree = "<group>"; };
 		57ADA7D41F586E8000E90CAC /* XYResourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYResourceController.swift; sourceTree = "<group>"; };
 		57B22FD11F5A951900A6CCB3 /* XYProfileCellInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XYProfileCellInfo.json; sourceTree = "<group>"; };
+		57D8D3FD1F5F89A1000932ED /* XYCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYCommon.swift; sourceTree = "<group>"; };
 		985625C81F5EAB7C0025C639 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		985625CA1F5EAD3B0025C639 /* YYImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/XYReadBook-gdvumviweyyeuibhxecgpcdusios/Build/Products/Debug-iphonesimulator/YYImage/YYImage.framework"; sourceTree = "<group>"; };
 		985625CE1F5EC22C0025C639 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
@@ -123,7 +124,6 @@
 		985625D51F5EC4AF0025C639 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		985625D91F5EC4EE0025C639 /* HTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		985625DB1F5EC7730025C639 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
-		98A2515C1F5D8E2A004434A2 /* XYCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYCommon.swift; sourceTree = "<group>"; };
 		B5C0E61760BD462F116F565B /* Pods_XYReadBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYReadBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C024CE43957E200D6D4E86EF /* Pods-XYReadBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReadBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYReadBook/Pods-XYReadBook.debug.xcconfig"; sourceTree = "<group>"; };
 		E3EF45DCF0DF038FE25B37EF /* Pods-XYReadBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYReadBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYReadBook/Pods-XYReadBook.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 			children = (
 				57A416FA1F5C632C00EF4C1D /* XYBasicCell.swift */,
 				570039291F58FE9100E68B5D /* XYTabBar.swift */,
-				98A2515C1F5D8E2A004434A2 /* XYCommon.swift */,
+				57D8D3FD1F5F89A1000932ED /* XYCommon.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -485,7 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98A2515B1F5D83CB004434A2 /* BuildFile in Sources */,
+				98A2515B1F5D83CB004434A2 /* (null) in Sources */,
 				985625DA1F5EC4EE0025C639 /* HTTPManager.swift in Sources */,
 				57A416F41F5BD6A100EF4C1D /* XYProfileCommonView.swift in Sources */,
 				57A416EE1F5BC8FA00EF4C1D /* XYBrowseController.swift in Sources */,
@@ -499,7 +499,6 @@
 				57A416EA1F5BC8C800EF4C1D /* XYChargeController.swift in Sources */,
 				57A417051F5D3C2300EF4C1D /* XYWalletView.swift in Sources */,
 				57ADA7D51F586E8000E90CAC /* XYResourceController.swift in Sources */,
-				98A2515D1F5D8E2A004434A2 /* XYCommon.swift in Sources */,
 				57ADA7C21F58686C00E90CAC /* NSBundle+HMObjcSugar.m in Sources */,
 				985625CF1F5EC22C0025C639 /* CacheManager.swift in Sources */,
 				985625D11F5EC2430025C639 /* HTTPCache.swift in Sources */,
@@ -525,6 +524,7 @@
 				57ADA7D11F586E5900E90CAC /* XYBookshelfController.swift in Sources */,
 				57ADA7CB1F58686C00E90CAC /* UITextField+HMObjcSugar.m in Sources */,
 				570039261F58F35900E68B5D /* Bundle+extensions.swift in Sources */,
+				57D8D3FE1F5F89A1000932ED /* XYCommon.swift in Sources */,
 				570039211F58EFCC00E68B5D /* XYNavigationController.swift in Sources */,
 				985625D61F5EC4AF0025C639 /* BaseResponse.swift in Sources */,
 				57ADA7C51F58686C00E90CAC /* UIButton+HMObjcSugar.m in Sources */,
